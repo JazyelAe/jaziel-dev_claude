@@ -1,0 +1,72 @@
+.container { width: 100%; max-width: calc(var(--max) + var(--gutter) * 2); margin-inline: auto; padding-inline: var(--gutter); }
+
+#bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -2; opacity: .9; pointer-events: none; }
+body::before {
+  /* retícula técnica sutil */
+  content: ""; position: fixed; inset: 0; z-index: -3; pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(38, 48, 60, .35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(38, 48, 60, .35) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse at 50% 20%, #000 10%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 20%, #000 10%, transparent 75%);
+}
+#glow {
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(520px circle at var(--mx) var(--my), rgba(101, 245, 196, .085), transparent 65%),
+    radial-gradient(900px circle at calc(var(--mx) + 12vw) calc(var(--my) + 10vh), rgba(104, 169, 255, .05), transparent 70%);
+}
+
+/* Header */
+.site-header {
+  position: fixed; inset: 0 0 auto 0; z-index: 100; height: var(--header-h);
+  border-bottom: 1px solid rgba(38, 48, 60, .6);
+}
+/* El desenfoque va en un pseudo-elemento: un backdrop-filter en el propio header haría que el menú móvil (position: fixed) quedara atrapado dentro de sus 68 px */
+.site-header::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(to bottom, rgba(8, 11, 16, .92), rgba(8, 11, 16, .6));
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+}
+.header-inner {
+  height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  max-width: calc(var(--max) + var(--gutter) * 2); margin-inline: auto; padding-inline: var(--gutter);
+}
+
+.site-nav ul { display: flex; gap: .25rem; }
+.site-nav { display: flex; align-items: center; gap: 1rem; }
+
+/* Secciones */
+main { position: relative; }
+.section { padding-block: clamp(5rem, 11vw, 9rem); position: relative; }
+.section::before {
+  content: ""; position: absolute; top: 0; left: var(--gutter); right: var(--gutter); height: 1px;
+  background: linear-gradient(to right, var(--border), transparent 80%);
+  max-width: var(--max); margin-inline: auto;
+}
+.section-head { max-width: 46rem; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+.section-head h2 { margin-top: .9rem; }
+.section-lead { color: var(--muted); font-size: 1.075rem; margin-top: 1.1rem; max-width: 38rem; }
+.section-n { font-size: .78rem; color: var(--mint); text-transform: uppercase; letter-spacing: .14em; }
+
+/* Hero */
+.hero { min-height: 100svh; padding-top: calc(var(--header-h) + 2rem); padding-bottom: 4rem; display: flex; align-items: center; position: relative; overflow-x: clip; }
+.hero-grid { display: grid; gap: 3rem; align-items: center; }
+
+/* Perfil */
+.profile-grid { display: grid; gap: 3rem; }
+
+/* Tecnologías */
+.skills-grid { display: grid; gap: 1rem; }
+
+/* Contacto */
+.contact-grid { display: grid; gap: 3rem; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--border); padding-block: 3rem 2rem; background: linear-gradient(to bottom, transparent, rgba(16, 23, 32, .6)); }
+.footer-inner { display: grid; gap: 2rem; }
+.footer-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(38, 48, 60, .6); font-size: .78rem; color: var(--muted); }
+.footer-msg { color: var(--muted); margin-top: .9rem; max-width: 28rem; }
+.footer-links { display: flex; flex-direction: column; gap: .6rem; font-size: .85rem; color: var(--muted); }
+.footer-links a:hover { color: var(--mint); }

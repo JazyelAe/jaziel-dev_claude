@@ -1,0 +1,74 @@
+{
+  "name": "Jahir Jaziel Serrano Arana",
+  "title": "Desarrollador Frontend Jr. & QA Tester",
+  "location": "Puebla, México",
+  "availability": {
+    "enabled": false,
+    "text": ""
+  },
+  "about": [
+    "Soy estudiante de Ingeniería en Tecnologías de la Información, en el área de Desarrollo de Software Multiplataforma. Me interesa desarrollar interfaces web funcionales, colaborar en proyectos de software y contribuir a la calidad de las aplicaciones mediante pruebas y validación de funcionalidades."
+  ],
+  "highlights": [
+    {
+      "icon": "layout",
+      "title": "Desarrollo frontend"
+    },
+    {
+      "icon": "smartphone",
+      "title": "Diseño responsivo"
+    },
+    {
+      "icon": "check-circle",
+      "title": "Pruebas funcionales"
+    },
+    {
+      "icon": "bug",
+      "title": "Identificación y documentación de errores"
+    },
+    {
+      "icon": "users",
+      "title": "Trabajo colaborativo"
+    },
+    {
+      "icon": "refresh",
+      "title": "Mejora continua"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Tecnológica de Puebla",
+      "degree": "Ingeniería en Tecnologías de la Información",
+      "area": "Desarrollo de Software Multiplataforma",
+      "period": "2025 — En curso",
+      "current": true
+    },
+    {
+      "institution": "Universidad Tecnológica de Puebla",
+      "degree": "TSU en Tecnologías de la Información",
+      "area": "Desarrollo de Software Multiplataforma",
+      "period": "2023 — 2025",
+      "current": false
+    },
+    {
+      "institution": "CONALEP Puebla 1",
+      "degree": "Técnico en Mecatrónica",
+      "area": "",
+      "period": "2019 — 2022",
+      "current": false
+    }
+  ],
+  "links": {
+    "email": "jahirarana06@gmail.com",
+    "github": "https://github.com/JazyelAe",
+    "linkedin": "https://www.linkedin.com/in/jahirjazielserrano"
+  },
+  "cv": {
+    "path": "assets/cv/cv-jahir-jaziel.pdf",
+    "label": "Consultar CV"
+  },
+  "contact": {
+    "endpoint": "",
+    "note": "Pega aquí la URL de la función de Firebase (ver firebase/README.md). Vacío = el formulario ofrece enviar por correo."
+  }
+}

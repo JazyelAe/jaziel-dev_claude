@@ -1,0 +1,79 @@
+/* Mobile-first: los estilos base son móviles. Aquí se amplía. */
+
+/* ---- Menú móvil (< 880px) ---- */
+@media (max-width: 879px) {
+  .js .site-nav:not(.simple-nav) {
+    position: fixed; inset: var(--header-h) 0 0 0; z-index: 99;
+    flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 1.5rem;
+    padding: 2rem var(--gutter) 3rem; overflow-y: auto;
+    background: rgba(8, 11, 16, .97); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+    clip-path: inset(0 0 100% 0); opacity: 0; visibility: hidden;
+    transition: clip-path .55s var(--ease), opacity .3s, visibility 0s linear .55s;
+  }
+  .nav-open .site-nav:not(.simple-nav) { clip-path: inset(0 0 0 0); opacity: 1; visibility: visible; transition: clip-path .55s var(--ease), opacity .3s; }
+  .js .site-nav:not(.simple-nav) ul { flex-direction: column; gap: 0; }
+  .js .site-nav:not(.simple-nav) li { opacity: 0; transform: translateY(16px); border-bottom: 1px solid rgba(38, 48, 60, .6); }
+  .nav-open .site-nav:not(.simple-nav) li { opacity: 1; transform: none; }
+  .js .site-nav:not(.simple-nav) a[data-nav] { font-size: 1.9rem; font-weight: 700; letter-spacing: -.03em; color: var(--text); padding: 1rem 0; width: 100%; border-radius: 0; }
+  .js .site-nav:not(.simple-nav) a[data-nav] .nav-n { opacity: 1; transform: none; font-size: .75rem; }
+  .js .site-nav:not(.simple-nav) a[data-nav]::after { display: none; }
+  .nav-cv { align-self: flex-start; }
+  body.nav-open { overflow: hidden; }
+  .chip-a { left: 2%; } .chip-b { right: 2%; }
+  .hero { align-items: flex-start; }
+  .hero-stage { order: -1; width: min(78%, 320px); margin-top: .5rem; }
+  .stage-orbit { inset: -10%; }
+}
+/* Sin JS el menú móvil queda como lista simple */
+@media (max-width: 879px) { html:not(.js) .menu-toggle { display: none; } html:not(.js) .site-header { position: absolute; height: auto; } html:not(.js) .header-inner { flex-wrap: wrap; padding-block: .8rem; } html:not(.js) .site-nav ul { flex-wrap: wrap; } }
+
+@media (min-width: 880px) {
+  .menu-toggle { display: none; }
+  .scroll-cue { display: inline-flex; }
+}
+
+@media (min-width: 700px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-form { grid-template-columns: 1fr 1fr; }
+  .contact-form .full { grid-column: 1 / -1; }
+  .shots { grid-template-columns: repeat(2, 1fr); }
+  .detail-nav { grid-template-columns: 1fr 1fr; }
+  .footer-inner { grid-template-columns: 1.4fr 1fr; align-items: end; }
+  .footer-links { align-items: flex-end; }
+}
+
+@media (min-width: 1000px) {
+  .hero-grid { grid-template-columns: 1.15fr .85fr; gap: 4rem; }
+  .hero-stage { justify-self: end; }
+  .project-grid { grid-template-columns: repeat(12, 1fr); gap: 1.4rem; }
+  .project-card { grid-column: span 6; }
+  .project-card:nth-child(4n+1) { grid-column: span 7; }
+  .project-card:nth-child(4n+2) { grid-column: span 5; }
+  .project-card:nth-child(4n+3) { grid-column: span 5; }
+  .project-card:nth-child(4n+4) { grid-column: span 7; }
+  .project-card:last-child:nth-child(4n+3), .project-card:only-child { grid-column: 1 / -1; }
+  .project-card:only-child { flex-direction: row; }
+  .project-card:only-child .cover { width: 48%; aspect-ratio: auto; border-bottom: 0; border-right: 1px solid var(--border); }
+  .profile-grid { grid-template-columns: 1.1fr .9fr; gap: 5rem; align-items: start; }
+  .skills-grid { grid-template-columns: repeat(6, 1fr); }
+  .skill-group { grid-column: span 2; }
+  .skill-group:nth-child(4) { grid-column: span 3; }
+  .skill-group:nth-child(5) { grid-column: span 3; }
+  .contact-grid { grid-template-columns: .9fr 1.1fr; gap: 5rem; align-items: start; }
+  .detail-grid { grid-template-columns: 1fr 300px; gap: 4rem; }
+  .meta-card { position: sticky; top: calc(var(--header-h) + 1.5rem); order: 2; }
+}
+
+@media (min-width: 1280px) { .hero-stage { width: 460px; } }
+
+/* Móviles muy pequeños */
+@media (max-width: 380px) {
+  .hero-title { font-size: 2.1rem; }
+  .btn { padding-inline: 1.1rem; }
+}
+
+/* Dispositivos táctiles: sin inclinación ni brillo de puntero */
+@media (hover: none) {
+  .project-card, .portrait { transform: none !important; }
+  .project-card::after { display: none; }
+}

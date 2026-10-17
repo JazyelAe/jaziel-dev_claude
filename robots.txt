@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jazyelae.github.io/jaziel-dev_claude/sitemap.xml

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JAZIEL.DEV — Jahir Jaziel Serrano Arana · Desarrollador Frontend Jr. & QA Tester</title>
+  <meta name="description" content="Portafolio de Jahir Jaziel Serrano Arana: desarrollo web frontend y aseguramiento de calidad (QA) desde Puebla, México.">
+  <meta name="theme-color" content="#080B10">
+  <link rel="canonical" href="https://jazyelae.github.io/jaziel-dev_claude/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JAZIEL.DEV">
+  <meta property="og:title" content="JAZIEL.DEV — Desarrollador Frontend Jr. & QA Tester">
+  <meta property="og:description" content="Diseño interfaces. Desarrollo soluciones. Verifico cada detalle.">
+  <meta property="og:url" content="https://jazyelae.github.io/jaziel-dev_claude/">
+  <meta property="og:image" content="https://jazyelae.github.io/jaziel-dev_claude/assets/images/og-cover.png">
+  <meta property="og:locale" content="es_MX">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try { if (sessionStorage.getItem('jd-intro')) d.classList.add('intro-seen'); } catch (e) {}
+      /* Si main.js no arranca en 4 s (error de red o de módulo), se muestra todo el contenido sin animación. */
+      setTimeout(function () { if (!d.classList.contains('js-ok')) d.classList.add('reveal-failsafe'); }, 4000);
+    })();
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Jahir Jaziel Serrano Arana","jobTitle":"Desarrollador Frontend Jr. & QA Tester","url":"https://jazyelae.github.io/jaziel-dev_claude/","image":"https://jazyelae.github.io/jaziel-dev_claude/assets/images/jaziel-profile.webp","address":{"@type":"PostalAddress","addressLocality":"Puebla","addressCountry":"MX"},"alumniOf":"Universidad Tecnológica de Puebla","sameAs":["https://github.com/JazyelAe","https://www.linkedin.com/in/jahirjazielserrano"]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div id="intro" aria-hidden="true">
+    <span class="intro-logo">JAZIEL<i>.DEV</i></span>
+    <span class="intro-bar"></span>
+  </div>
+
+  <div id="progress" aria-hidden="true"><span></span></div>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div id="glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="#inicio" aria-label="JAZIEL.DEV — ir al inicio">
+        <span class="logo-bracket" aria-hidden="true">&lt;</span>JAZIEL<span class="logo-dev">.DEV</span><span class="logo-bracket" aria-hidden="true">/&gt;</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio" data-nav="inicio"><span class="nav-n">01</span>Inicio</a></li>
+          <li><a href="#proyectos" data-nav="proyectos"><span class="nav-n">02</span>Proyectos</a></li>
+          <li><a href="#perfil" data-nav="perfil"><span class="nav-n">03</span>Perfil</a></li>
+          <li><a href="#tecnologias" data-nav="tecnologias"><span class="nav-n">04</span>Tecnologías</a></li>
+          <li><a href="#contacto" data-nav="contacto"><span class="nav-n">05</span>Contacto</a></li>
+        </ul>
+        <a class="btn btn-ghost btn-sm nav-cv" data-cv href="assets/cv/cv-jahir-jaziel.pdf" target="_blank" rel="noopener" hidden>
+          <span data-icon="file-text"></span>Consultar CV
+        </a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+        <span class="menu-bars" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow mono" data-reveal><span class="dot"></span>Puebla, México</p>
+          <p class="hero-name" data-reveal>Jahir Jaziel Serrano Arana</p>
+          <p class="hero-role mono" data-reveal>Desarrollador Frontend Jr. <span>&amp;</span> QA Tester</p>
+          <h1 class="hero-title" id="hero-title">
+            <span class="line"><span class="line-in">Diseño interfaces.</span></span>
+            <span class="line"><span class="line-in">Desarrollo soluciones.</span></span>
+            <span class="line"><span class="line-in accent">Verifico cada detalle.</span></span>
+          </h1>
+          <p class="hero-lead" data-reveal>Desarrollo web y aseguramiento de calidad enfocados en experiencias digitales funcionales, claras y bien construidas.</p>
+          <p class="availability mono" id="availability" hidden></p>
+          <div class="hero-cta" data-reveal>
+            <a class="btn btn-primary" href="#proyectos" data-magnetic>Explorar proyectos<span data-icon="arrow-down"></span></a>
+            <a class="btn btn-ghost" href="#contacto" data-magnetic>Contactar</a>
+            <a class="btn btn-text" data-cv href="assets/cv/cv-jahir-jaziel.pdf" target="_blank" rel="noopener" hidden><span data-icon="file-text"></span>CV</a>
+          </div>
+          <ul class="hero-links mono" data-reveal aria-label="Enlaces profesionales">
+            <li><a data-link="github" href="https://github.com/JazyelAe" target="_blank" rel="noopener"><span data-icon="github"></span>GitHub</a></li>
+            <li><a data-link="linkedin" href="https://www.linkedin.com/in/jahirjazielserrano" target="_blank" rel="noopener"><span data-icon="linkedin"></span>LinkedIn</a></li>
+            <li><a data-link="email" href="mailto:jahirarana06@gmail.com"><span data-icon="mail"></span>Correo</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-stage" data-stage>
+          <div class="stage-orbit" aria-hidden="true">
+            <svg viewBox="0 0 200 200" class="ring-text">
+              <defs><path id="ringPath" d="M100,100 m-82,0 a82,82 0 1,1 164,0 a82,82 0 1,1 -164,0"/></defs>
+              <text><textPath href="#ringPath" startOffset="0">DISEÑO · DESARROLLO · VERIFICACIÓN · DISEÑO · DESARROLLO · VERIFICACIÓN ·</textPath></text>
+            </svg>
+          </div>
+          <figure class="portrait" id="portrait">
+            <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+            <div class="portrait-media">
+              <img src="assets/images/jaziel-profile.webp" srcset="assets/images/jaziel-profile-480.webp 480w, assets/images/jaziel-profile.webp 665w" sizes="(max-width: 700px) 80vw, 460px" width="665" height="662" alt="Retrato profesional de Jahir Jaziel Serrano Arana, con saco negro y corbata verde azulado" fetchpriority="high" decoding="async">
+              <div class="portrait-fallback" hidden aria-hidden="true"><span>JS</span></div>
+              <span class="scan" aria-hidden="true"></span>
+            </div>
+            <figcaption class="portrait-cap mono"><span class="pulse"></span><span id="test-line">render ✓</span></figcaption>
+          </figure>
+          <span class="chip chip-a mono" aria-hidden="true">&lt;frontend/&gt;</span>
+          <span class="chip chip-b mono" aria-hidden="true">qa.verify()</span>
+        </div>
+      </div>
+      <a class="scroll-cue mono" href="#proyectos" aria-label="Ir a proyectos"><span>scroll</span><i></i></a>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <span class="section-n mono">02 / Proyectos</span>
+          <h2 id="proyectos-title">Trabajo <em>real</em>, evidencia técnica.</h2>
+          <p class="section-lead">Proyectos en los que he participado como desarrollador frontend y como QA Tester.</p>
+        </header>
+        <div class="filters" id="filters" role="group" aria-label="Filtrar proyectos por categoría"></div>
+        <p class="sr-only" id="projects-status" role="status" aria-live="polite"></p>
+        <div class="project-grid" id="project-grid" aria-busy="true">
+          <noscript><p class="state-box">Activa JavaScript para ver los proyectos aquí o visita <a href="https://github.com/JazyelAe" rel="noopener">mi GitHub</a>.</p></noscript>
+          <div class="state-box skeleton" aria-hidden="true">Cargando proyectos…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFIL -->
+    <section class="section" id="perfil" aria-labelledby="perfil-title">
+      <div class="container profile-grid">
+        <div data-reveal>
+          <span class="section-n mono">03 / Perfil</span>
+          <h2 id="perfil-title">Construir con criterio,<br><em>probar con rigor.</em></h2>
+          <div id="about-text" class="about-text">
+            <p>Soy estudiante de Ingeniería en Tecnologías de la Información, en el área de Desarrollo de Software Multiplataforma. Me interesa desarrollar interfaces web funcionales, colaborar en proyectos de software y contribuir a la calidad de las aplicaciones mediante pruebas y validación de funcionalidades.</p>
+          </div>
+          <div class="edu" aria-labelledby="edu-title">
+            <h3 class="mono edu-title" id="edu-title">// Formación académica</h3>
+            <ol id="edu-list" class="edu-list">
+              <li><strong>Universidad Tecnológica de Puebla</strong><span>Ingeniería en Tecnologías de la Información · Desarrollo de Software Multiplataforma</span><em class="mono">En curso</em></li>
+              <li><strong>Universidad Tecnológica de Puebla</strong><span>TSU en Tecnologías de la Información · Desarrollo de Software Multiplataforma</span></li>
+              <li><strong>CONALEP Puebla 1</strong><span>Técnico en Mecatrónica</span></li>
+            </ol>
+          </div>
+        </div>
+        <ul class="highlights" id="highlights" data-reveal aria-label="Áreas destacadas">
+          <li><span data-icon="layout"></span>Desarrollo frontend</li>
+          <li><span data-icon="smartphone"></span>Diseño responsivo</li>
+          <li><span data-icon="check-circle"></span>Pruebas funcionales</li>
+          <li><span data-icon="bug"></span>Identificación y documentación de errores</li>
+          <li><span data-icon="users"></span>Trabajo colaborativo</li>
+          <li><span data-icon="refresh"></span>Mejora continua</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section class="section" id="tecnologias" aria-labelledby="tec-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <span class="section-n mono">04 / Tecnologías</span>
+          <h2 id="tec-title">Herramientas del <em>oficio</em>.</h2>
+        </header>
+        <div class="skills-grid" id="skills-grid">
+          <noscript><p class="state-box">Frontend: HTML5, CSS3, JavaScript, Bootstrap · Backend: Python, Django, PHP, C# · Bases de datos: MySQL, SQLite, PostgreSQL, Supabase · QA: pruebas funcionales · Herramientas: Git, GitHub, VS Code.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container contact-grid">
+        <div data-reveal>
+          <span class="section-n mono">05 / Contacto</span>
+          <h2 id="contacto-title">Hablemos de tu<br><em>próximo proyecto</em>.</h2>
+          <p class="section-lead">Escríbeme por correo, redes profesionales o con el formulario.</p>
+          <div class="mail-row">
+            <a class="mail-link mono" id="mail-link" href="mailto:jahirarana06@gmail.com"><span data-icon="mail"></span><span id="mail-text">jahirarana06@gmail.com</span></a>
+            <button class="btn btn-ghost btn-sm" id="copy-mail" type="button"><span data-icon="copy"></span><span class="copy-label">Copiar correo</span></button>
+          </div>
+          <p class="sr-only" id="copy-status" role="status" aria-live="polite"></p>
+          <ul class="contact-links">
+            <li><a data-link="github" href="https://github.com/JazyelAe" target="_blank" rel="noopener"><span data-icon="github"></span>github.com/JazyelAe<span data-icon="arrow-up-right" class="ext"></span></a></li>
+            <li><a data-link="linkedin" href="https://www.linkedin.com/in/jahirjazielserrano" target="_blank" rel="noopener"><span data-icon="linkedin"></span>LinkedIn<span data-icon="arrow-up-right" class="ext"></span></a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate data-reveal>
+          <div class="field">
+            <label for="cf-name">Nombre</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="cf-name-err">
+            <span class="field-err" id="cf-name-err" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="cf-email">Correo</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="120" aria-describedby="cf-email-err">
+            <span class="field-err" id="cf-email-err" role="alert"></span>
+          </div>
+          <div class="field full">
+            <label for="cf-subject">Asunto</label>
+            <input id="cf-subject" name="subject" type="text" required minlength="3" maxlength="120" aria-describedby="cf-subject-err">
+            <span class="field-err" id="cf-subject-err" role="alert"></span>
+          </div>
+          <div class="field full">
+            <label for="cf-message">Mensaje</label>
+            <textarea id="cf-message" name="message" rows="5" required minlength="10" maxlength="2000" aria-describedby="cf-message-err cf-count"></textarea>
+            <span class="field-foot"><span class="field-err" id="cf-message-err" role="alert"></span><span class="mono count" id="cf-count">0 / 2000</span></span>
+          </div>
+          <div class="hp" aria-hidden="true"><label>No rellenar este campo <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <div class="form-actions full">
+            <button class="btn btn-primary" type="submit" id="cf-submit"><span class="btn-label">Enviar mensaje</span><span data-icon="send"></span></button>
+            <p class="form-status" id="cf-status" role="status" aria-live="polite" tabindex="-1"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="logo" href="#top" aria-label="JAZIEL.DEV — volver arriba"><span class="logo-bracket" aria-hidden="true">&lt;</span>JAZIEL<span class="logo-dev">.DEV</span><span class="logo-bracket" aria-hidden="true">/&gt;</span></a>
+        <p class="footer-msg">Código claro, interfaces cuidadas y pruebas que respaldan el resultado.</p>
+      </div>
+      <ul class="footer-links mono">
+        <li><a data-link="github" href="https://github.com/JazyelAe" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a data-link="linkedin" href="https://www.linkedin.com/in/jahirjazielserrano" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a data-link="email" href="mailto:jahirarana06@gmail.com">jahirarana06@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class="container footer-base mono">
+      <span>© <span id="year">2026</span> Jahir Jaziel Serrano Arana</span>
+      <span>Puebla, México</span>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

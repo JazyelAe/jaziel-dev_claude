@@ -1,0 +1,160 @@
+{
+  "categories": {
+    "frontend": "Frontend",
+    "qa": "QA / Testing",
+    "web": "Aplicaciones web",
+    "backend": "Backend"
+  },
+  "projects": [
+    {
+      "id": "talenthub-mexico",
+      "slug": "talenthub-mexico",
+      "title": "TalentHub México",
+      "subtitle": "Observatorio de empleos TI en México",
+      "shortDescription": "Plataforma de empleos TI en producción, con interfaces propias e integración con un backend Python/Django.",
+      "description": "Plataforma de empleos TI en producción en la que he colaborado en el desarrollo de interfaces con HTML, CSS y JavaScript, integración con un backend en Python/Django, apoyo en la integración con PostgreSQL y Supabase, y documentación técnica.",
+      "role": "Frontend",
+      "categories": [
+        "frontend",
+        "web"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Supabase"
+      ],
+      "coverImage": "",
+      "gallery": [],
+      "repositoryUrl": "https://github.com/Mshkp/talenthub-mexico",
+      "liveUrl": "https://talent-hub.me",
+      "featured": true,
+      "published": true,
+      "sortOrder": 1,
+      "details": {
+        "context": "Observatorio de empleos TI en México: una plataforma web en producción dedicada a las vacantes del sector de tecnologías de la información.",
+        "objective": "",
+        "problem": "",
+        "solution": "",
+        "contribution": [
+          "Desarrollo de interfaces de usuario con HTML, CSS y JavaScript.",
+          "Integración de las interfaces con el backend en Python/Django.",
+          "Apoyo en la integración con PostgreSQL y Supabase.",
+          "Documentación técnica del proyecto (configuración de entorno y despliegue)."
+        ],
+        "features": []
+      },
+      "status": "En producción",
+      "period": "2025 — Actualidad"
+    },
+    {
+      "id": "consultas-medicas",
+      "slug": "consultas-medicas",
+      "title": "Consultas Médicas",
+      "subtitle": "Sistema de gestión de citas médicas",
+      "shortDescription": "Pruebas funcionales de un sistema de citas médicas: calendario, recuperación de contraseña, perfil y diagnóstico.",
+      "description": "Participación en pruebas funcionales de módulos como calendario de citas, recuperación de contraseña, edición de perfil y actualización de diagnóstico. Identificación de errores de interfaz, validación de formularios y comprobación de funcionalidades.",
+      "role": "QA Tester",
+      "categories": [
+        "qa",
+        "web"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP"
+      ],
+      "coverImage": "",
+      "gallery": [],
+      "repositoryUrl": "https://github.com/Mshkp/Consultas-Medicas",
+      "liveUrl": "",
+      "featured": false,
+      "published": true,
+      "sortOrder": 2,
+      "details": {
+        "context": "Sistema de gestión de citas médicas desarrollado en equipo (4 integrantes) con HTML, CSS, JavaScript y PHP. Mi participación fue como QA Tester.",
+        "objective": "",
+        "problem": "",
+        "solution": "",
+        "contribution": [
+          "Ejecución de pruebas funcionales sobre módulos clave del sistema.",
+          "Identificación y reporte de errores de interfaz.",
+          "Validación de formularios y verificación de la funcionalidad de los botones.",
+          "Colaboración con el equipo de desarrollo para validar las correcciones antes de cada entrega."
+        ],
+        "features": [
+          "Calendario de citas",
+          "Recuperación de contraseña",
+          "Edición de perfil",
+          "Actualización de diagnóstico"
+        ]
+      },
+      "team": "Equipo de 4 integrantes",
+      "featuresLabel": "Módulos evaluados"
+    },
+    {
+      "id": "django-bootstrap-app",
+      "slug": "django-bootstrap-app",
+      "title": "Aplicación web con Django y Bootstrap",
+      "subtitle": "",
+      "shortDescription": "Desarrollo de interfaces web responsivas y formularios dinámicos.",
+      "description": "Desarrollo de interfaces web responsivas y formularios dinámicos.",
+      "role": "Frontend",
+      "categories": [
+        "frontend",
+        "web"
+      ],
+      "technologies": [
+        "Django",
+        "Bootstrap"
+      ],
+      "coverImage": "",
+      "gallery": [],
+      "repositoryUrl": "",
+      "liveUrl": "",
+      "featured": false,
+      "published": false,
+      "sortOrder": 3,
+      "details": {
+        "context": "",
+        "objective": "",
+        "problem": "",
+        "solution": "",
+        "contribution": [],
+        "features": []
+      }
+    },
+    {
+      "id": "sistema-gestion-usuarios",
+      "slug": "sistema-gestion-usuarios",
+      "title": "Sistema de gestión de usuarios",
+      "subtitle": "",
+      "shortDescription": "Herramienta para administración y consulta de información de usuarios.",
+      "description": "Herramienta para administración y consulta de información de usuarios.",
+      "role": "",
+      "categories": [
+        "web"
+      ],
+      "technologies": [],
+      "coverImage": "",
+      "gallery": [],
+      "repositoryUrl": "",
+      "liveUrl": "",
+      "featured": false,
+      "published": false,
+      "sortOrder": 4,
+      "details": {
+        "context": "",
+        "objective": "",
+        "problem": "",
+        "solution": "",
+        "contribution": [],
+        "features": []
+      }
+    }
+  ]
+}

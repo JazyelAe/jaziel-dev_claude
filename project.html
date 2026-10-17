@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto — JAZIEL.DEV</title>
+  <meta name="description" content="Detalle de proyecto del portafolio de Jahir Jaziel Serrano Arana.">
+  <meta name="theme-color" content="#080B10">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="JAZIEL.DEV">
+  <meta property="og:title" content="Proyecto — JAZIEL.DEV">
+  <meta property="og:image" content="https://jazyelae.github.io/jaziel-dev_claude/assets/images/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try { if (sessionStorage.getItem('jd-intro')) d.classList.add('intro-seen'); } catch (e) {}
+      /* Si main.js no arranca en 4 s (error de red o de módulo), se muestra todo el contenido sin animación. */
+      setTimeout(function () { if (!d.classList.contains('js-ok')) d.classList.add('reveal-failsafe'); }, 4000);
+    })();
+  </script>
+</head>
+<body class="page-project">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div id="progress" aria-hidden="true"><span></span></div>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div id="glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="JAZIEL.DEV — volver al inicio"><span class="logo-bracket" aria-hidden="true">&lt;</span>JAZIEL<span class="logo-dev">.DEV</span><span class="logo-bracket" aria-hidden="true">/&gt;</span></a>
+      <nav class="site-nav simple-nav" aria-label="Navegación principal">
+        <a class="btn btn-ghost btn-sm" href="index.html#proyectos"><span data-icon="arrow-left"></span>Todos los proyectos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="container detail">
+    <div id="detail-root" aria-busy="true">
+      <div class="state-box skeleton">Cargando proyecto…</div>
+    </div>
+    <noscript><p class="state-box">Este apartado necesita JavaScript. Puedes volver a <a href="index.html#proyectos">los proyectos</a> o visitar <a href="https://github.com/JazyelAe" rel="noopener">mi GitHub</a>.</p></noscript>
+  </main>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Captura ampliada">
+    <button type="button" class="lightbox-close btn btn-ghost btn-sm" aria-label="Cerrar imagen"><span data-icon="x"></span></button>
+    <img alt="" src="">
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-base mono">
+      <span>© <span id="year">2026</span> Jahir Jaziel Serrano Arana</span>
+      <a href="index.html#contacto">Contacto</a>
+    </div>
+  </footer>
+  <script type="module" src="js/project-detail.js"></script>
+</body>
+</html>

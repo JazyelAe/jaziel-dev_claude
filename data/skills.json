@@ -1,0 +1,39 @@
+{
+  "groups": [
+    {
+      "id": "frontend",
+      "title": "Frontend",
+      "icon": "layout",
+      "items": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Diseño responsivo"]
+    },
+    {
+      "id": "backend",
+      "title": "Backend y programación",
+      "icon": "server",
+      "items": ["Python", "Django", "PHP", "C#", "Programación orientada a objetos"]
+    },
+    {
+      "id": "databases",
+      "title": "Bases de datos",
+      "icon": "database",
+      "items": ["MySQL", "SQLite", "PostgreSQL", "Supabase", "MongoDB (conocimientos básicos)"]
+    },
+    {
+      "id": "qa",
+      "title": "QA",
+      "icon": "shield-check",
+      "items": [
+        "Pruebas funcionales manuales",
+        "Validación de formularios",
+        "Comprobación de flujos de usuario",
+        "Detección y reporte de errores"
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Herramientas",
+      "icon": "wrench",
+      "items": ["Git", "GitHub", "Visual Studio Code"]
+    }
+  ]
+}

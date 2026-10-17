@@ -1,0 +1,29 @@
+{
+  "name": "JAZIEL.DEV",
+  "short_name": "JAZIEL.DEV",
+  "description": "Portafolio de Jahir Jaziel Serrano Arana — Desarrollador Frontend Jr. & QA Tester",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#080B10",
+  "theme_color": "#080B10",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

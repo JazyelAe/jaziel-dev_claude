@@ -3,7 +3,8 @@
     "frontend": "Frontend",
     "qa": "QA / Testing",
     "web": "Aplicaciones web",
-    "backend": "Backend"
+    "backend": "Backend",
+    "videojuegos": "Videojuegos"
   },
   "projects": [
     {
@@ -13,7 +14,7 @@
       "subtitle": "Observatorio de empleos TI en México",
       "shortDescription": "Plataforma de empleos TI en producción, con interfaces propias e integración con un backend Python/Django.",
       "description": "Plataforma de empleos TI en producción en la que he colaborado en el desarrollo de interfaces con HTML, CSS y JavaScript, integración con un backend en Python/Django, apoyo en la integración con PostgreSQL y Supabase, y documentación técnica.",
-      "role": "Frontend",
+      "role": "Frontend UX & QA",
       "categories": [
         "frontend",
         "web"
@@ -27,9 +28,18 @@
         "PostgreSQL",
         "Supabase"
       ],
-      "coverImage": "",
-      "gallery": [],
-      "repositoryUrl": "https://github.com/Mshkp/talenthub-mexico",
+      "coverImage": "assets/images/projects/talenthub-mexico-1.webp",
+      "gallery": [
+        {
+          "src": "assets/images/projects/talenthub-mexico-1.webp",
+          "alt": "Página de inicio de TalentHub México en producción, con una vacante destacada y su rango salarial"
+        },
+        {
+          "src": "assets/images/projects/talenthub-mexico-2.webp",
+          "alt": "Listado de vacantes de TalentHub México con filtros por texto, modalidad y salario mínimo"
+        }
+      ],
+      "repositoryUrl": "https://github.com/yeu-dev/talenthub-mexico",
       "liveUrl": "https://talent-hub.me",
       "featured": true,
       "published": true,
@@ -49,6 +59,128 @@
       },
       "status": "En producción",
       "period": "2025 — Actualidad"
+    },
+    {
+      "id": "mi-recetario",
+      "slug": "mi-recetario",
+      "title": "Mi Recetario",
+      "subtitle": "App web de recetas con base de datos en la nube y API pública",
+      "shortDescription": "PWA de recetas con Firebase Firestore como base de datos y consumo de la API pública TheMealDB.",
+      "description": "Aplicación web progresiva de recetas desarrollada para la materia de Aplicaciones Web Progresivas de la Universidad Tecnológica de Puebla. Guarda las recetas en Firebase Firestore, permite filtrarlas y buscarlas, y consulta recetas reales desde la API pública TheMealDB para guardarlas en el recetario.",
+      "role": "Desarrollador",
+      "categories": [
+        "frontend",
+        "web"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Firebase Firestore",
+        "PWA",
+        "API REST (TheMealDB)"
+      ],
+      "coverImage": "assets/images/projects/mi-recetario-1.webp",
+      "gallery": [
+        {
+          "src": "assets/images/projects/mi-recetario-1.webp",
+          "alt": "Inicio de Mi Recetario conectado a Firebase, con la receta del día y recetas destacadas filtrables por categoría"
+        },
+        {
+          "src": "assets/images/projects/mi-recetario-2.webp",
+          "alt": "Sección Recetas en línea de Mi Recetario mostrando resultados reales de la API TheMealDB para la búsqueda \"chicken\""
+        }
+      ],
+      "repositoryUrl": "https://github.com/JazyelAe/web",
+      "liveUrl": "https://jazyelae.github.io/web/",
+      "featured": false,
+      "published": true,
+      "sortOrder": 2,
+      "details": {
+        "context": "Proyecto académico de la Universidad Tecnológica de Puebla (Aplicaciones Web Progresivas), publicado en GitHub Pages.",
+        "objective": "",
+        "problem": "",
+        "solution": "",
+        "contribution": [
+          "Desarrollo completo del frontend con HTML, CSS y JavaScript en módulos ES.",
+          "Conexión con Firebase Firestore y redacción de sus reglas de seguridad.",
+          "Consumo de la API REST pública TheMealDB.",
+          "Configuración como PWA con manifest y service worker."
+        ],
+        "features": [
+          "Recetas guardadas en Firestore (con modo local en el navegador si no hay Firebase)",
+          "Filtros por categoría y buscador por ingrediente o platillo",
+          "Alta y borrado de recetas",
+          "Búsqueda de recetas reales en TheMealDB y guardado en el recetario",
+          "Instalable como PWA"
+        ]
+      },
+      "status": "Publicado",
+      "team": "Proyecto individual"
+    },
+    {
+      "id": "api-rest-e-commerce",
+      "slug": "api-rest-e-commerce",
+      "title": "API REST E-Commerce",
+      "subtitle": "API REST para tienda en línea con catálogo y base de datos",
+      "shortDescription": "API REST para una tienda en línea, con catálogo de productos y base de datos MySQL mediante TypeORM.",
+      "description": "API REST para una tienda en línea con catálogo de productos y persistencia en MySQL usando TypeORM.",
+      "role": "Backend",
+      "categories": [
+        "backend"
+      ],
+      "technologies": [
+        "API REST",
+        "TypeORM",
+        "MySQL"
+      ],
+      "coverImage": "",
+      "gallery": [],
+      "repositoryUrl": "https://github.com/JazyelAe/E-Commerce",
+      "liveUrl": "",
+      "featured": false,
+      "published": true,
+      "sortOrder": 3,
+      "details": {
+        "context": "",
+        "objective": "",
+        "problem": "",
+        "solution": "",
+        "contribution": [],
+        "features": []
+      },
+      "status": "En desarrollo"
+    },
+    {
+      "id": "gravedad-cero",
+      "slug": "gravedad-cero",
+      "title": "Gravedad Cero",
+      "subtitle": "Proyecto de videojuego en desarrollo",
+      "shortDescription": "Videojuego en Unity, actualmente en etapa de planeación.",
+      "description": "Proyecto de videojuego desarrollado con Unity, actualmente en etapa de planeación.",
+      "role": "",
+      "categories": [
+        "videojuegos"
+      ],
+      "technologies": [
+        "Unity"
+      ],
+      "coverImage": "",
+      "gallery": [],
+      "repositoryUrl": "",
+      "liveUrl": "",
+      "featured": false,
+      "published": true,
+      "sortOrder": 4,
+      "details": {
+        "context": "",
+        "objective": "",
+        "problem": "",
+        "solution": "",
+        "contribution": [],
+        "features": []
+      },
+      "status": "En planeación"
     },
     {
       "id": "consultas-medicas",
@@ -73,8 +205,8 @@
       "repositoryUrl": "https://github.com/Mshkp/Consultas-Medicas",
       "liveUrl": "",
       "featured": false,
-      "published": true,
-      "sortOrder": 2,
+      "published": false,
+      "sortOrder": 7,
       "details": {
         "context": "Sistema de gestión de citas médicas desarrollado en equipo (4 integrantes) con HTML, CSS, JavaScript y PHP. Mi participación fue como QA Tester.",
         "objective": "",
@@ -118,7 +250,7 @@
       "liveUrl": "",
       "featured": false,
       "published": false,
-      "sortOrder": 3,
+      "sortOrder": 5,
       "details": {
         "context": "",
         "objective": "",
@@ -146,7 +278,7 @@
       "liveUrl": "",
       "featured": false,
       "published": false,
-      "sortOrder": 4,
+      "sortOrder": 6,
       "details": {
         "context": "",
         "objective": "",
